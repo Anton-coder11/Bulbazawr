@@ -1,4 +1,4 @@
-package L2;
+package HW.L2;
 
 public class hjp {
 

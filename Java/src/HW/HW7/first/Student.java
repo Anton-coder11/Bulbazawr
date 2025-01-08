@@ -1,4 +1,4 @@
-package HW7.first;
+package HW.HW7.first;
 
 public class Student {
     String name;

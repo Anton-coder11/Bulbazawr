@@ -1,4 +1,4 @@
-package whynot;
+package HW.whynot;
 
 
 public class Library {

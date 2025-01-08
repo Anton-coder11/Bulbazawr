@@ -1,3 +1,5 @@
+package HW;
+
 public class HW6 {
         public static void main(String[] args) {
             int[] array = {5, 2, 9, 1, 5, 6,87,98,9,6,56,764};

@@ -1,4 +1,4 @@
-package HW7.second;
+package HW.HW7.second;
 
 public class Main {
     public static void main(String[] args) {

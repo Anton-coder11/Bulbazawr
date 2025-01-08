@@ -1,4 +1,4 @@
-package HW7.first;
+package HW.HW7.first;
 //public class Main {
 //    public static void main(String[] args) {
 //        Студент студент1 = new Студент("Іван", 123);
