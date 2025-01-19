@@ -1,7 +1,4 @@
 package Non_graphic.HW.HW10.first;
-
-
-
 import java.util.ArrayList;
 
 
