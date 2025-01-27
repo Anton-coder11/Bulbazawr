@@ -31,6 +31,12 @@ public class UI extends JFrame {
 
                 frame.add(buttonPanel, BorderLayout.CENTER);
 
+
                 frame.setVisible(true);
+
+
+
+
+
             }
         }
