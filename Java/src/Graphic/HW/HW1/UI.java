@@ -1,4 +1,4 @@
-package Graphic.HW1;
+package Graphic.HW.HW1;
 
 import javax.swing.*;
 import java.awt.*;
