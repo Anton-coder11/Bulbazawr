@@ -1,0 +1,41 @@
+name: Build Calculator EXE
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Set up JDK
+      uses: actions/setup-java@v2
+      with:
+        java-version: '8'
+        distribution: 'adopt'
+    
+    - name: Download Launch4j
+      run: |
+        curl -L -o launch4j.zip https://sourceforge.net/projects/launch4j/files/launch4j-3/3.14/launch4j-3.14-win32.zip/download
+        7z x launch4j.zip
+    
+    - name: Copy files to build directory
+      run: |
+        mkdir build
+        copy Calculator-fixed.jar build\
+        copy config.xml build\
+        cd build
+    
+    - name: Build EXE
+      run: |
+        .\launch4j\launch4j.exe config.xml
+    
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: Calculator
+        path: Calculator.exe
