@@ -15,7 +15,7 @@ public class Panelka extends JPanel  implements KeyListener {
     Panelka(UI ui){
         ui.addKeyListener(this);
         try {
-            image = ImageIO.read(new File("image.png")); // Замініть на свій шлях
+            image = ImageIO.read(new File("/Users/anton/Desktop/coding/HILEL/JAVA/Java/src/Graphic/L18/image.png")); // Замініть на свій шлях
 
         } catch (IOException e) {
             e.printStackTrace();
